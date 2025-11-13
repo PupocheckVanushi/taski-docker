@@ -5,9 +5,9 @@ on:
         - main
 jobs:
   checkout-and-print-tree:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        users: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: Print project tree
         run: tree .
